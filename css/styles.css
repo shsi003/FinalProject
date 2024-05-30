@@ -1,0 +1,94 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+body{
+
+}
+
+header{
+	text-align: center;
+	padding: 20px;
+	margin-bottom:10px;
+	font-size: 20px;
+}
+
+header p{
+	font-size: 15px;
+}
+
+
+.BestSellers-slideshow{
+	width: 80%;
+	height: 80vh;
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+
+.BestSellers-slideshow h1 {
+	color: white;
+	padding: 5px;
+	font-style: italic;
+	
+}
+
+
+.BestSellers-slideshow .image{
+	display: none;
+	
+}
+
+.BestSellers-slideshow .image img{
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+	border-radius: 15px;
+	border: 2px solid white;
+	overflow: hidden;
+}
+
+.BestSellers-slideshow .button{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 5;
+}
+
+.BestSellers-slideshow .button a{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	align-items: center;
+	cursor: pointer;
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 20px;
+	user-select: none;
+}
+
+.caption {
+	color: white;
+	border: 2px solid ;
+	border-radius: 10px;
+	background: black;
+	font-size: 16px;
+	font-style: italic;
+	padding: 10px;
+}
+
+.BestSellers-slideshow .button .prev{
+	border-radius: 5px 0 0 5px;
+}
+
+.BestSellers-slideshow .button .next{
+	border-radius: 5px 0 0 5px;
+}

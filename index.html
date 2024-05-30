@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<title></title>
+	</head>
+	<body>
+		<header>
+		<h1>Header</h1>
+			<p>Exclusive items from a new fandom - every month!</p>
+		</header>
+
+		<main>
+			<div class="BestSellers-slideshow">
+				<h2>Our best sellers</h2>
+				<div class="image">
+					<img src="img/img1.jpg" alt="">
+					<div class="caption">Album Cover for "Wiped out!"</div>
+				</div>
+		
+				<div class="image">
+					<img src="img/img2.jpg" alt="">
+					<div class="caption">Cover art for the album "I'm Sorry"</div>
+				</div>
+		
+				<div class="image">
+					<img src="img/img3.jpg" alt="">
+					<div class="caption">Cover art for the single "R.I.P. 2 my youth"</div>
+				</div>
+		
+				<div class="image">
+					<img src="img/img4.jpg" alt="">
+					<div class="caption">Cover art for the single "Nervous"</div>
+				</div>
+
+				<div class="button">
+					<a onclick="nextimg(-1)" class="prev">&#10094</a>
+					<a onclick="nextimg(1)" class="next">&#10095</a>
+				</div>
+		
+				<div class="dots">
+					<span class="dot" onclick="currentslide(1)"></span>
+					<span class="dot" onclick="currentslide(2)"></span>
+					<span class="dot" onclick="currentslide(3)"></span>
+					<span class="dot" onclick="currentslide(4)"></span>
+				</div>
+		
+			</div>
+
+		</main>
+
+		<footer></footer>
+
+	</body>
+	<script src="js/app.js"></script>
+</html>
