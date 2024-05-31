@@ -6,7 +6,9 @@
 }
 
 body{
- background-image: url(../assets/images/mainpageBackground.jpeg);
+background-image: url(../assets/images/mainpageBackground.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 header{
@@ -40,14 +42,26 @@ main {
 	margin: auto;
 	position: relative;
 	text-align: center;
+
 }
 
-.BestSellers-slideshow h1 {
-	color: white;
+.BestSellers-slideshow h2 {
+	background-color: black;
+	color: rgb(92, 7, 111);
+	border-radius: 20px;
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
 	padding: 5px;
 	font-style: italic;
 	
 }
+
+
 
 
 .BestSellers-slideshow .image{
@@ -111,6 +125,7 @@ main {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 	padding: 20px;
+	margin-top: 10px;
 }
 
 .Product{
@@ -120,6 +135,23 @@ main {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+}
+
+ h2 {
+	text-align: center;
+	background-color: black;
+	color: rgb(92, 7, 111);
+	border-radius: 20px;
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
+	padding: 5px;
+	font-style: italic;
+	
 }
 
 .product_image{

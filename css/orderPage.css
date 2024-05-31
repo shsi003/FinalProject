@@ -1,9 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
 }
-
 
 header{
 	text-align: center;
@@ -19,33 +18,29 @@ header{
 	1px -1px 0 #fff,
 	-1px 1px 0 #fff,
 	1px 1px 0 #fff;
-	
 }
 
 header p{
 	font-size: 15px;
 }
 
-body {
-    background-image: url(../assets/images/mainpageBackground.jpeg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-.wrapper {
-	position: center;
-	width: 420px;
-	background: transparent;
-	border: 2px rgba(255, 255, 255, .2);
-	backdrop-filter: blur (20px);
-	background-color: purple;
-	border-radius: 10px;
-	padding: 30px 40px; 
+body{
+	align-items: center;
+	flex-direction: column;
+	
 }
 
-form{
+.pokeSearch{
+	text-align: center;
+}
+
+.Pokedex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
+	height: 100vh;
+	border: 2px solid black;
+	padding:10px;
+
 }
