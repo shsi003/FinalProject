@@ -1,16 +1,18 @@
+var imageno =1;
+displayimg(imageno);
 
-document.addEventListener("DOMContentLoaded", () => {
-//slideshow js
-let imageno = 1;
+function nextimg(n){
+	displayimg(imageno += n)
+}
 
-function currentSlide(n) {
-	displayimg(imageno = n);
+function currentslide(n){
+	displayimg(imageno = n)
 }
 
 function displayimg(n){
-	let i;
-	const image = document.getElementsByClassName("image");
-	const dots = document.getElementsByClassName("dot");
+	var i;
+	var image = document.getElementsByClassName("image");
+	var dots = document.getElementsByClassName("dot");
 
 	if(n > image.length){
 		imageno = 1;
@@ -32,5 +34,4 @@ function displayimg(n){
 	dots[imageno - 1].className += " active";
 
 	
- }
-});
+}
