@@ -1,5 +1,10 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+//slideshow js
+let imageno = 1;
+
 function currentslide(n){
-	displayimg(imageno = n)
+	displayimg(imageno = n);
 }
 
 function displayimg(n){
@@ -27,4 +32,4 @@ function displayimg(n){
 	dots[imageno - 1].className += " active";
 
 	
-}
+} } )
