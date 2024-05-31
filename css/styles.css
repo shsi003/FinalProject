@@ -6,7 +6,7 @@
 }
 
 body{
-
+ background-image: url(../assets/images/mainpageBackground.jpeg);
 }
 
 header{
@@ -14,6 +14,15 @@ header{
 	padding: 20px;
 	margin-bottom:10px;
 	font-size: 20px;
+	background-color: black;
+	color: rgb(92, 7, 111);
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
 }
 
 header p{
@@ -74,7 +83,7 @@ main {
 	align-items: center;
 	cursor: pointer;
 	color: white;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(121, 15, 144, 0.8);
 	font-size: 20px;
 	user-select: none;
 }
@@ -109,20 +118,24 @@ main {
 	border: 1px solid black;
 	border-radius: 15px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .product_image{
 	object-fit: cover;
 	width: 100%;
-	height: 100%;
+	height: 100%; 
+	align-items: center;
 }
 
-.product_title{
+a{
 	font-weight: 600;
 	font-size: 18px;
 	background: rgb(106, 15, 106);
 	border: 1px solid white;
 	color: white;
 	border-radius:15px;
+	text-decoration:none;
 
 }

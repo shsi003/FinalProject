@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
 //slideshow js
 let imageno = 1;
 
-function currentslide(n){
+function currentSlide(n) {
 	displayimg(imageno = n);
 }
 
 function displayimg(n){
-	var i;
-	var image = document.getElementsByClassName("image");
-	var dots = document.getElementsByClassName("dot");
+	let i;
+	const image = document.getElementsByClassName("image");
+	const dots = document.getElementsByClassName("dot");
 
 	if(n > image.length){
 		imageno = 1;
@@ -32,4 +32,5 @@ function displayimg(n){
 	dots[imageno - 1].className += " active";
 
 	
-} } )
+ }
+});
