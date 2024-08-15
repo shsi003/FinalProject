@@ -1,5 +1,9 @@
-import app from "./firebaseConfig";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
+import app from "../firebaseConfig.js";
+import { getAuth, 
+	createUserWithEmailAndPassword, 
+	signInWithEmailAndPassword, 
+	signOut, 
+	onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" ;
 
 const auth = getAuth(app);
 
@@ -39,4 +43,20 @@ onAuthStateChanged(auth, (user) => {
 	}else{
 		userStatusDiv.innerHTML = "Not logged in";
 	}
+});
+
+document.getElementById('registerBtn').addEventListener('click', () => {
+    const email = document.getElementById('registerEmail').value;
+    const password = document.getElementById('registerPassword').value;
+    registerUser(email, password);
+});
+
+document.getElementById('loginBtn').addEventListener('click', () => {
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    loginUser(email, password);
+});
+
+document.getElementById('logoutBtn').addEventListener('click', () => {
+    logoutUser();
 });
