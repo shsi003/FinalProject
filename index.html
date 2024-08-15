@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>Library app</h1>
-		<div id="authSection">>
+		<div id="authSection">
 		<h2>Register</h2>
 		<input type="email" id="registerEmail" placeholder="Email">
 		<input type="password" id="registerPassword" placeholder="password">
@@ -23,12 +23,15 @@
 		<button id="logoutBtn">Logout</button>
 		<div id="authSection">
 		</div>
-		
-
-
-
-
+		<br><br>
 		<div id="userStatus"></div>
+		<div id="userLink" style="display:none;">
+			<a href="booklist.html">Go to my booklist</a>
+		</div>
+
+
+
+		<script type="module" src="./js/firebaseConfig.js"></script>
 		<script type="module" src="./js/index.js"></script>
 	</body>
 </html>
