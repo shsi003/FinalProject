@@ -1,55 +1,131 @@
-styles.css
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-      }
-      .container {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-      }
-      .auth-section, .search-section, .books-section {
-        margin: 20px 0;
-      }
-      .auth-section form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        max-width: 300px;
-      }
-      .search-section {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      .books-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-      }
-      .book-card {
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      }
-      .error {
-        color: red;
-        font-size: 0.9em;
-      }
-      @media (max-width: 600px) {
-        .books-grid {
-          grid-template-columns: 1fr;
-        }
-      }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ 
+
+}
+
+header{
+  text-align: center;
+  background-color: black;
+  color:white;
+  padding:20px;
+  justify-content: space-between;
+  z-index:4;
+
+}
+
+header nav h1{
+  font-size:26px;
+  font-weight: 700;
+  letter-spacing:1px;
+}
+
+header nav form{
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="text"],button[
+  type="submit"
+]{
+  font-size:18;
+  padding:10px;
+  flex-grow:1;
+   margin-right:10px;
+}
+
+form button[type="submit"]{
+  border: 2px solid white;
+  background-color:black;
+  color:white;
+  transition: background-color 0.2s
+  ease-in-out;
+}
+
+form button[type="submit"]:hover{
+  background-color:rgb(25, 24, 24);
+}
+
+body{
+  background-image: url(../assets/cozyKitchen.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#authForm{
+  align-items: center;
+  border-radius: 2px;
+  background-image: url(../assets/beautifulTrees.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+}
+
+#authForm h2{
+  padding-bottom: 30px;
+  padding: 20px;
+  border-radius: 20px ;
+}
+
+#authForm input{
+  padding-bottom: 30px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#authForm button{
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+
+}
+
+
+
+#secretContent h3{
+  background-color: black;
+  color:white;
+  text-align: center;
+  
+
+}
+
+#secretContent h2{
+  background-color: black;
+  color:white;
+  text-align: left;
+  
+
+}
+
+#secretContent h2{
+  text-align: center;
+
+}
+
+#secretContent #signOutbtn{
+  position:relative;
+  text-align: top left;
+  background-color: black;
+  border-radius:20px;
+  color:white;
+  padding:20px;
+  z-index: 99;
+}
+
+@media screen and
+(max-width:600px){
+  header nav{
+    flex-direction: column;
+  }
+  header nav form{
+    width: 80%;
+    margin-top:20px;
+  }
+}

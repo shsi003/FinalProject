@@ -7,6 +7,22 @@ import {auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuth
 		const signUpbtn = document.getElementById('signUpbtn');
 		const signInbtn = document.getElementById('signInbtn');
 		const signOutbtn = document.getElementById('signOutbtn');
+		const searchBox = document.getElementById('searchBox');
+		const searchBtn = document.querySelector('searchBtn');
+		const recipeContainer = document.getElementById('recipeContainer');
+
+		const fetchRecipes = (query) => {
+			const data = fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+
+		}
+
+
+		searchBtn.addEventListener('click', (e) => {
+			e.preventDefault();
+			const searchInput = searchBox.value.trim();
+			fetchRecipes(searchInput);
+
+		})
 
 		secretContent.style.display='none';
 
